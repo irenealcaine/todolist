@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <script type="module" src="./index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>ToDoList</h1>
+    <main>
+      <form id="form">
+        <!-- <h2>Nueva tarea</h2> -->
+        <div class="inputs">
+          <textarea id="task" placeholder="Text your new task here" maxlength="30" required></textarea>
+          <select name="priority" id="priority" required>
+            <option value="none">Priority</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <div class="buttons">
+          <button type="submit" class="form-button">✔️</button>
+          <button type="reset" class="form-button">❌</button>
+        </div>
+      </form>
+      <div class="list" id="listTask">
+        <h2>ToDo</h2>
+        <div id="list">
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
