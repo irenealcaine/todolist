@@ -32,7 +32,7 @@ function createHTML() {
     tasks.forEach(task => {
       const btnEliminar = document.createElement("a");
       btnEliminar.classList.add("delete");
-      btnEliminar.textContent = "❌";
+      btnEliminar.innerHTML = "<img src=\"./assets/images/trash.png\" alt=\"\">";
       btnEliminar.onclick = () => {
         deleteTask(task.id);
       };
